@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Resources - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2><i class="bi bi-code-square"></i> TechStore</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="c-programming.html" class="nav-link">C Programming</a>
+                    <a href="javascript.html" class="nav-link active">JavaScript</a>
+                    <a href="index.html#categories" class="nav-link">Categories</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search JavaScript resources...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="user-actions">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero js-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>JavaScript</span>
+                </div>
+                <h1><i class="bi bi-filetype-js"></i> JavaScript Resources</h1>
+                <p>Master modern JavaScript, frameworks, and web development - from vanilla JS to cutting-edge technologies</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Courses</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">75+</span>
+                        <span class="stat-label">Frameworks</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Categories -->
+    <section class="framework-categories">
+        <div class="container">
+            <h2 class="section-title">Popular JavaScript Technologies</h2>
+            <div class="frameworks-grid">
+                <div class="framework-card react">
+                    <div class="framework-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Build user interfaces with components</p>
+                    <div class="framework-stats">
+                        <span>50+ courses</span>
+                        <span>★ 4.8</span>
+                    </div>
+                </div>
+                <div class="framework-card vue">
+                    <div class="framework-icon">
+                        <i class="bi bi-triangle"></i>
+                    </div>
+                    <h3>Vue.js</h3>
+                    <p>Progressive framework for building UIs</p>
+                    <div class="framework-stats">
+                        <span>25+ courses</span>
+                        <span>★ 4.7</span>
+                    </div>
+                </div>
+                <div class="framework-card angular">
+                    <div class="framework-icon">
+                        <i class="bi bi-pentagon"></i>
+                    </div>
+                    <h3>Angular</h3>
+                    <p>Platform for building mobile and desktop apps</p>
+                    <div class="framework-stats">
+                        <span>30+ courses</span>
+                        <span>★ 4.6</span>
+                    </div>
+                </div>
+                <div class="framework-card node">
+                    <div class="framework-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>JavaScript runtime for server-side development</p>
+                    <div class="framework-stats">
+                        <span>40+ courses</span>
+                        <span>★ 4.8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Technology:</label>
+                    <select class="filter-select">
+                        <option>All Technologies</option>
+                        <option>Vanilla JavaScript</option>
+                        <option>React</option>
+                        <option>Vue.js</option>
+                        <option>Angular</option>
+                        <option>Node.js</option>
+                        <option>TypeScript</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Type:</label>
+                    <select class="filter-select">
+                        <option>All Types</option>
+                        <option>Courses</option>
+                        <option>Books</option>
+                        <option>Projects</option>
+                        <option>Templates</option>
+                        <option>Tools</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Level:</label>
+                    <select class="filter-select">
+                        <option>All Levels</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                        <option>Expert</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select class="filter-select">
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Course -->
+    <section class="featured-course">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-badge">Featured Course</div>
+                    <h2>Complete Modern JavaScript Bootcamp</h2>
+                    <p>Master JavaScript ES6+, React, Node.js, and build real-world projects. From fundamentals to advanced concepts including async programming, modules, and modern frameworks.</p>
+                    <div class="featured-details">
+                        <div class="detail">
+                            <i class="bi bi-clock"></i>
+                            <span>60 hours of content</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-people"></i>
+                            <span>25,000+ students</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-star-fill"></i>
+                            <span>4.9 rating</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-code-square"></i>
+                            <span>10 Projects included</span>
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        <span class="current-price">$89.99</span>
+                        <span class="original-price">$179.99</span>
+                        <span class="discount">50% OFF</span>
+                    </div>
+                    <button class="btn btn-primary btn-large">Enroll Now</button>
+                </div>
+                <div class="featured-image">
+                    <div class="course-preview">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <span class="filename">app.js</span>
+                                <div class="code-actions">
+                                    <i class="bi bi-files"></i>
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <div class="line"><span class="keyword">const</span> <span class="variable">fetchData</span> = <span class="keyword">async</span> () => {</div>
+                                <div class="line">  <span class="keyword">try</span> {</div>
+                                <div class="line">    <span class="keyword">const</span> <span class="variable">response</span> = <span class="keyword">await</span> <span class="function">fetch</span>(<span class="string">'/api/data'</span>);</div>
+                                <div class="line">    <span class="keyword">const</span> <span class="variable">data</span> = <span class="keyword">await</span> <span class="variable">response</span>.<span class="function">json</span>();</div>
+                                <div class="line">    <span class="keyword">return</span> <span class="variable">data</span>;</div>
+                                <div class="line">  } <span class="keyword">catch</span> (<span class="variable">error</span>) {</div>
+                                <div class="line">    <span class="function">console</span>.<span class="function">error</span>(<span class="variable">error</span>);</div>
+                                <div class="line">  }</div>
+                                <div class="line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">All JavaScript Resources</h2>
+            <div class="products-grid">
+                <!-- React Course -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #61dafb, #21759b);">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>React Complete Developer Course</h3>
+                        <p class="product-category">React Framework</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(3,540)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 45 hours</span>
+                            <span><i class="bi bi-people"></i> 18,500 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$69.99</span>
+                            <span class="original-price">$129.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node.js Course -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #68A063, #3C873A);">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Node.js & Express Masterclass</h3>
+                        <p class="product-category">Backend Development</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(1,890)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 40 hours</span>
+                            <span><i class="bi bi-people"></i> 12,300 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                            <span class="original-price">$149.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Book -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img book-bg">
+                            <i class="bi bi-book"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>You Don't Know JS (Book Series)</h3>
+                        <p class="product-category">JavaScript Fundamentals</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(2,456)</span>
+                        </div>
+                        <div class="book-details">
+                            <span><i class="bi bi-collection"></i> 6 Books</span>
+                            <span><i class="bi bi-person"></i> Kyle Simpson</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vue.js Course -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #4FC08D, #396A62);">
+                            <i class="bi bi-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vue.js 3 Complete Guide</h3>
+                        <p class="product-category">Vue Framework</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(1,234)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 35 hours</span>
+                            <span><i class="bi bi-people"></i> 8,900 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$59.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript Projects -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img tools-bg">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>20 JavaScript Projects Bundle</h3>
+                        <p class="product-category">Practice Projects</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(678)</span>
+                        </div>
+                        <div class="project-details">
+                            <span><i class="bi bi-folder"></i> 20 Projects</span>
+                            <span><i class="bi bi-github"></i> Source Code</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TypeScript Course -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #3178C6, #235A97);">
+                            <i class="bi bi-code"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>TypeScript for JavaScript Developers</h3>
+                        <p class="product-category">TypeScript</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(890)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 25 hours</span>
+                            <span><i class="bi bi-people"></i> 6,700 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$54.99</span>
+                            <span class="original-price">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angular Course -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #DD0031, #C3002F);">
+                            <i class="bi bi-pentagon"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Angular - The Complete Guide</h3>
+                        <p class="product-category">Angular Framework</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(2,123)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 50 hours</span>
+                            <span><i class="bi bi-people"></i> 15,400 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$74.99</span>
+                            <span class="original-price">$139.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Templates Bundle -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #FF6B6B, #FF5252);">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium JavaScript Templates</h3>
+                        <p class="product-category">UI Templates</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(345)</span>
+                        </div>
+                        <div class="template-details">
+                            <span><i class="bi bi-layout-text-window"></i> 25 Templates</span>
+                            <span><i class="bi bi-phone"></i> Responsive</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$59.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Roadmap -->
+    <section class="learning-path">
+        <div class="container">
+            <h2 class="section-title">JavaScript Learning Roadmap</h2>
+            <div class="path-container">
+                <div class="path-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>JavaScript Basics</h3>
+                        <p>Variables, functions, DOM manipulation, events</p>
+                        <div class="step-duration">3-4 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>ES6+ Features</h3>
+                        <p>Arrow functions, destructuring, modules, async/await</p>
+                        <div class="step-duration">2-3 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Frontend Framework</h3>
+                        <p>Choose React, Vue, or Angular for UI development</p>
+                        <div class="step-duration">6-8 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Backend with Node.js</h3>
+                        <p>Server-side JavaScript, APIs, databases</p>
+                        <div class="step-duration">4-6 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Full-Stack Projects</h3>
+                        <p>Build complete applications and deploy</p>
+                        <div class="step-duration">8-12 weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Technologies -->
+    <section class="trending-tech">
+        <div class="container">
+            <h2 class="section-title">Trending JavaScript Technologies</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div>
+                    <h4>Next.js</h4>
+                    <p>React framework for production</p>
+                    <span class="trend-indicator">🔥 Hot</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🏗️</div>
+                    <h4>Svelte</h4>
+                    <p>Compile-time optimized framework</p>
+                    <span class="trend-indicator">📈 Rising</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">⚛️</div>
+                    <h4>Deno</h4>
+                    <p>Modern runtime for JavaScript</p>
+                    <span class="trend-indicator">🆕 New</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔧</div>
+                    <h4>Vite</h4>
+                    <p>Fast build tool for modern web</p>
+                    <span class="trend-indicator">⚡ Fast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-code-square"></i> TechStore</h3>
+                    <p>Your one-stop destination for programming resources and digital products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="c-programming.html">C Programming</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="#">Programming Books</a></li>
+                        <li><a href="#">Video Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
