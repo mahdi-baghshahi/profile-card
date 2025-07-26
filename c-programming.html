@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Resources - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2><i class="bi bi-code-square"></i> TechStore</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="c-programming.html" class="nav-link active">C Programming</a>
+                    <a href="javascript.html" class="nav-link">JavaScript</a>
+                    <a href="index.html#categories" class="nav-link">Categories</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search C resources...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="user-actions">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero c-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span>C Programming</span>
+                </div>
+                <h1><i class="bi bi-file-earmark-code"></i> C Programming Resources</h1>
+                <p>Master the fundamentals of programming with C - from basic syntax to advanced system programming concepts</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Courses</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Books</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select class="filter-select">
+                        <option>All Categories</option>
+                        <option>Beginner Courses</option>
+                        <option>Advanced Courses</option>
+                        <option>Programming Books</option>
+                        <option>Practice Projects</option>
+                        <option>Certification</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Level:</label>
+                    <select class="filter-select">
+                        <option>All Levels</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                        <option>Expert</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price:</label>
+                    <select class="filter-select">
+                        <option>All Prices</option>
+                        <option>Free</option>
+                        <option>Under $25</option>
+                        <option>$25 - $50</option>
+                        <option>$50 - $100</option>
+                        <option>$100+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort by:</label>
+                    <select class="filter-select">
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Course -->
+    <section class="featured-course">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-badge">Featured Course</div>
+                    <h2>Complete C Programming Bootcamp</h2>
+                    <p>Learn C programming from scratch with hands-on projects, data structures, algorithms, and real-world applications. Perfect for beginners and professionals alike.</p>
+                    <div class="featured-details">
+                        <div class="detail">
+                            <i class="bi bi-clock"></i>
+                            <span>40 hours of content</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-people"></i>
+                            <span>15,000+ students</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-star-fill"></i>
+                            <span>4.8 rating</span>
+                        </div>
+                        <div class="detail">
+                            <i class="bi bi-award"></i>
+                            <span>Certificate included</span>
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        <span class="current-price">$79.99</span>
+                        <span class="original-price">$149.99</span>
+                        <span class="discount">47% OFF</span>
+                    </div>
+                    <button class="btn btn-primary btn-large">Enroll Now</button>
+                </div>
+                <div class="featured-image">
+                    <div class="course-preview">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <span class="filename">hello_world.c</span>
+                                <div class="code-actions">
+                                    <i class="bi bi-files"></i>
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <div class="line"><span class="keyword">#include</span> <span class="string">&lt;stdio.h&gt;</span></div>
+                                <div class="line"></div>
+                                <div class="line"><span class="keyword">int</span> <span class="function">main</span>() {</div>
+                                <div class="line">    <span class="function">printf</span>(<span class="string">"Hello, World!"</span>);</div>
+                                <div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div>
+                                <div class="line">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">All C Programming Resources</h2>
+            <div class="products-grid">
+                <!-- Course 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img c-bg">
+                            <i class="bi bi-play-circle"></i>
+                        </div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Programming Fundamentals</h3>
+                        <p class="product-category">Beginner Course</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(2,340)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 25 hours</span>
+                            <span><i class="bi bi-people"></i> 8,500 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$69.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img book-bg">
+                            <i class="bi bi-book"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>The C Programming Language</h3>
+                        <p class="product-category">Classic Programming Book</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(1,892)</span>
+                        </div>
+                        <div class="book-details">
+                            <span><i class="bi bi-file-earmark"></i> 272 pages</span>
+                            <span><i class="bi bi-person"></i> Kernighan & Ritchie</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$34.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img c-bg">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Advanced C Programming</h3>
+                        <p class="product-category">Advanced Course</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(756)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 35 hours</span>
+                            <span><i class="bi bi-people"></i> 3,200 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$59.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img tools-bg">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Programming Projects Bundle</h3>
+                        <p class="product-category">Practice Projects</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(445)</span>
+                        </div>
+                        <div class="project-details">
+                            <span><i class="bi bi-folder"></i> 15 Projects</span>
+                            <span><i class="bi bi-github"></i> Source Code</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                            <span class="original-price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img book-bg">
+                            <i class="bi bi-journal-code"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Primer Plus</h3>
+                        <p class="product-category">Comprehensive Guide</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(1,234)</span>
+                        </div>
+                        <div class="book-details">
+                            <span><i class="bi bi-file-earmark"></i> 984 pages</span>
+                            <span><i class="bi bi-person"></i> Stephen Prata</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$44.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img c-bg">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Data Structures in C</h3>
+                        <p class="product-category">Intermediate Course</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(987)</span>
+                        </div>
+                        <div class="course-details">
+                            <span><i class="bi bi-clock"></i> 30 hours</span>
+                            <span><i class="bi bi-people"></i> 5,600 students</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #dc2626, #b91c1c);">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <div class="product-badge">Certificate</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Programming Certification</h3>
+                        <p class="product-category">Professional Certificate</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(567)</span>
+                        </div>
+                        <div class="cert-details">
+                            <span><i class="bi bi-clipboard-check"></i> 3 Exams</span>
+                            <span><i class="bi bi-patch-check"></i> Verified</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img tools-bg">
+                            <i class="bi bi-terminal"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Development Environment Setup</h3>
+                        <p class="product-category">Development Tools</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(234)</span>
+                        </div>
+                        <div class="tool-details">
+                            <span><i class="bi bi-laptop"></i> IDE Setup</span>
+                            <span><i class="bi bi-gear"></i> Compiler Config</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section class="learning-path">
+        <div class="container">
+            <h2 class="section-title">C Programming Learning Path</h2>
+            <div class="path-container">
+                <div class="path-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Basics & Syntax</h3>
+                        <p>Variables, data types, operators, and control structures</p>
+                        <div class="step-duration">2-3 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Functions & Arrays</h3>
+                        <p>Function creation, parameter passing, and array manipulation</p>
+                        <div class="step-duration">3-4 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Pointers & Memory</h3>
+                        <p>Memory management, pointers, and dynamic allocation</p>
+                        <div class="step-duration">4-5 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Data Structures</h3>
+                        <p>Linked lists, stacks, queues, and trees</p>
+                        <div class="step-duration">5-6 weeks</div>
+                    </div>
+                </div>
+                <div class="path-connector"></div>
+                <div class="path-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Advanced Topics</h3>
+                        <p>File I/O, preprocessors, and system programming</p>
+                        <div class="step-duration">6-8 weeks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-code-square"></i> TechStore</h3>
+                    <p>Your one-stop destination for programming resources and digital products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="c-programming.html">C Programming</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="#">Programming Books</a></li>
+                        <li><a href="#">Video Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

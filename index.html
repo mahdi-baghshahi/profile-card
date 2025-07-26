@@ -1,29 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="picture">
-        <img src="images/m11.jpg" />
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Programming Resources & Digital Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2><i class="bi bi-code-square"></i> TechStore</h2>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="c-programming.html" class="nav-link">C Programming</a>
+                    <a href="javascript.html" class="nav-link">JavaScript</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products...">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="user-actions">
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-person"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-      <h1>mahdi baghshahi</h1>
-      <p>front-end developer</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn Programming with Premium Resources</h1>
+                <p>Discover the best programming courses, books, and tools for C and JavaScript development</p>
+                <div class="hero-buttons">
+                    <a href="c-programming.html" class="btn btn-primary">Explore C Programming</a>
+                    <a href="javascript.html" class="btn btn-secondary">Explore JavaScript</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="card code-card">
+                        <i class="bi bi-braces"></i>
+                        <span>Clean Code</span>
+                    </div>
+                    <div class="card book-card">
+                        <i class="bi bi-book"></i>
+                        <span>Best Books</span>
+                    </div>
+                    <div class="card course-card">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Video Courses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="socials">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-whatsapp"></i>
-      </div>
-    </div>
-  </body>
+    <!-- Featured Categories -->
+    <section class="featured-categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Featured Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-file-earmark-code"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <p>Learn system programming, data structures, and algorithms</p>
+                    <a href="c-programming.html" class="category-link">Explore <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-filetype-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Master web development, frameworks, and modern JS</p>
+                    <a href="javascript.html" class="category-link">Explore <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <h3>Programming Books</h3>
+                    <p>Essential reading for every developer</p>
+                    <a href="#" class="category-link">Explore <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="bi bi-play-circle"></i>
+                    </div>
+                    <h3>Video Courses</h3>
+                    <p>Interactive learning with expert instructors</p>
+                    <a href="#" class="category-link">Explore <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products">
+        <div class="container">
+            <h2 class="section-title">Popular Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img c-bg">
+                            <i class="bi bi-file-earmark-code"></i>
+                        </div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>C Programming Complete Course</h3>
+                        <p class="product-category">Programming Course</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(324)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img js-bg">
+                            <i class="bi bi-filetype-js"></i>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern JavaScript Masterclass</h3>
+                        <p class="product-category">Web Development</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$59.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img book-bg">
+                            <i class="bi bi-book"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Clean Code: A Handbook</h3>
+                        <p class="product-category">Programming Book</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(892)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$29.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-img tools-bg">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Developer Tools Bundle</h3>
+                        <p class="product-category">Software Tools</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest programming resources and exclusive deals</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="bi bi-code-square"></i> TechStore</h3>
+                    <p>Your one-stop destination for programming resources and digital products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-github"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="c-programming.html">C Programming</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="#">Programming Books</a></li>
+                        <li><a href="#">Video Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
