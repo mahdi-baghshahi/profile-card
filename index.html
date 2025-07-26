@@ -1,29 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="picture">
-        <img src="images/m11.jpg" />
-      </div>
+<html lang="fa" dir="rtl">
 
-      <h1>mahdi baghshahi</h1>
-      <p>front-end developer</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <!-- Google Fonts - Vazirmatn for Persian -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>ShOpex - فروشگاه آنلاین</title>
+</head>
 
-      <div class="socials">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-github"></i>
-        <i class="bi bi-whatsapp"></i>
+<body>
+  <!-- Header Start -->
+  <header class="header">
+    <!-- Top notification bar -->
+    <div class="top-notification">
+      <div class="container">
+        <div class="notification-content">
+          <span class="notification-text">🎉 تخفیف ویژه 50% برای محصولات انتخابی - فقط امروز!</span>
+          <button class="notification-close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
       </div>
     </div>
-  </body>
+
+    <!-- Main header -->
+    <div class="header-main">
+      <div class="container">
+        <div class="header-content">
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="https://via.placeholder.com/120x40/1367ef/ffffff?text=ShOpex" alt="ShOpex">
+            </a>
+          </div>
+
+          <!-- Search bar -->
+          <div class="search-container">
+            <form class="search-form">
+              <input type="text" placeholder="جستجو در محصولات..." class="search-input">
+              <button type="submit" class="search-btn">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="/" class="nav-link active">
+                  <i class="bi bi-house"></i>
+                  خانه
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-grid"></i>
+                  دسته‌بندی‌ها
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-grid">
+                    <div class="dropdown-section">
+                      <h4>موبایل و تبلت</h4>
+                      <ul>
+                        <li><a href="#">گوشی موبایل</a></li>
+                        <li><a href="#">تبلت</a></li>
+                        <li><a href="#">هدفون</a></li>
+                        <li><a href="#">کیس و کاور</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-section">
+                      <h4>لپ‌تاپ و کامپیوتر</h4>
+                      <ul>
+                        <li><a href="#">لپ‌تاپ</a></li>
+                        <li><a href="#">کیبورد</a></li>
+                        <li><a href="#">ماوس</a></li>
+                        <li><a href="#">مانیتور</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-section">
+                      <h4>خانه و آشپزخانه</h4>
+                      <ul>
+                        <li><a href="#">لوازم برقی</a></li>
+                        <li><a href="#">ظروف</a></li>
+                        <li><a href="#">دکوراسیون</a></li>
+                        <li><a href="#">روشنایی</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-featured">
+                      <img src="https://via.placeholder.com/200x150/f0f0f0/666?text=Special+Offer" alt="پیشنهاد ویژه">
+                      <h4>پیشنهاد ویژه</h4>
+                      <p>تا 60% تخفیف روی محصولات منتخب</p>
+                      <a href="#" class="btn-featured">مشاهده همه</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-star"></i>
+                  پیشنهادها
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-percent"></i>
+                  تخفیف‌ها
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-telephone"></i>
+                  تماس با ما
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- User actions -->
+          <div class="user-actions">
+            <button class="action-btn search-toggle">
+              <i class="bi bi-search"></i>
+            </button>
+            <a href="#" class="action-btn">
+              <i class="bi bi-person"></i>
+              <span class="action-text">حساب کاربری</span>
+            </a>
+            <a href="#" class="action-btn">
+              <i class="bi bi-heart"></i>
+              <span class="action-text">علاقه‌مندی‌ها</span>
+              <span class="badge">3</span>
+            </a>
+            <a href="#" class="action-btn cart-btn">
+              <i class="bi bi-bag"></i>
+              <span class="action-text">سبد خرید</span>
+              <span class="badge cart-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories bar -->
+    <div class="categories-bar">
+      <div class="container">
+        <div class="categories-content">
+          <div class="categories-menu">
+            <button class="categories-toggle">
+              <i class="bi bi-grid-3x3-gap"></i>
+              همه دسته‌بندی‌ها
+            </button>
+          </div>
+          <div class="quick-categories">
+            <a href="#" class="category-link">
+              <i class="bi bi-phone"></i>
+              موبایل
+            </a>
+            <a href="#" class="category-link">
+              <i class="bi bi-laptop"></i>
+              لپ‌تاپ
+            </a>
+            <a href="#" class="category-link">
+              <i class="bi bi-headphones"></i>
+              صوتی
+            </a>
+            <a href="#" class="category-link">
+              <i class="bi bi-house"></i>
+              خانه
+            </a>
+            <a href="#" class="category-link">
+              <i class="bi bi-controller"></i>
+              گیمینگ
+            </a>
+          </div>
+          <div class="support-info">
+            <i class="bi bi-headset"></i>
+            <span>پشتیبانی 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <h3>منو</h3>
+      <button class="sidebar-close">
+        <i class="bi bi-x"></i>
+      </button>
+    </div>
+    <nav class="sidebar-nav">
+      <ul class="sidebar-list">
+        <li><a href="/"><i class="bi bi-house"></i> خانه</a></li>
+        <li><a href="#"><i class="bi bi-grid"></i> دسته‌بندی‌ها</a></li>
+        <li><a href="#"><i class="bi bi-star"></i> پیشنهادها</a></li>
+        <li><a href="#"><i class="bi bi-percent"></i> تخفیف‌ها</a></li>
+        <li><a href="#"><i class="bi bi-person"></i> حساب کاربری</a></li>
+        <li><a href="#"><i class="bi bi-telephone"></i> تماس با ما</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Main content placeholder -->
+  <main style="padding: 2rem; text-align: center; margin-top: 2rem;">
+    <h1>به فروشگاه ShOpex خوش آمدید</h1>
+    <p>این قسمت برای نمایش محتوای اصلی سایت در نظر گرفته شده است.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
